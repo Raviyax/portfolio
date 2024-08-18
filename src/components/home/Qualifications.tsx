@@ -5,7 +5,7 @@ import SectionTitle from "@/components/common/SectionTitle";
 import QualificationItem from "./ui/QualificationItem";
 import Fade from "./ui/transition/fade";
 
-const Qualifications = ({ id }: { id: string }) => {
+function Qualifications({ id }: { id: string }) {
   return (
     <ResponsiveBox
       classNames="bg-[var(--dialogColor)] min-h-[calc(100vh-5rem)] items-center justify-center"
@@ -47,6 +47,6 @@ const Qualifications = ({ id }: { id: string }) => {
       </ConstraintedBox>
     </ResponsiveBox>
   );
-};
+}
 
 export default Qualifications;
