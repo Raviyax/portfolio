@@ -12,7 +12,7 @@ export default function Contact() {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
-    formData.append("access_key", "7df47943-574a-4e92-a7ca-5ae2b10169f2");
+    formData.append("access_key", "5f777504-b7c2-458e-8222-feffc1881889");
 
     const object = Object.fromEntries(formData.entries());
     const json = JSON.stringify(object);

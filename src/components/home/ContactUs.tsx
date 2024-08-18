@@ -55,7 +55,7 @@ const Contact = () => {
                       className="text-gray-700 text-sm ml-4  dark:text-white"
                     >
                       <small className="block">Email</small>
-                      <strong>jayathilakeravishan@gmail.com</strong>
+                      <strong>info@raviyax.site</strong>
                     </a>
                   </li>
                 </ul>
