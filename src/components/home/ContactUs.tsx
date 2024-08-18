@@ -54,7 +54,7 @@ const Contact = () => {
                       href="mailto:info@msiclabs.com"
                       className="text-gray-700 text-sm ml-4  dark:text-white"
                     >
-                      <small className="block">Mail</small>
+                      <small className="block">Email</small>
                       <strong>jayathilakeravishan@gmail.com</strong>
                     </a>
                   </li>
