@@ -6,6 +6,7 @@ import { Card, CardBody } from "@nextui-org/react";
 import { useSwipeable } from "react-swipeable";
 import Fade from "./ui/transition/fade";
 import ResponsiveBox from "../core/ResponsiveBox";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 interface Project {
   imageSrc: string;
@@ -47,7 +48,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   const calculatePositions = (index: number) => {
     const centerIndex = Math.floor(numProjects / 2);
     const offset = index - centerIndex;
-    const xPosition = `${offset * 60}%`; // Adjusted for better spacing
+    const xPosition = `${offset * 60}%`;
     const scale = 1 - Math.abs(offset) * 0.2;
     const zIndex = numProjects - Math.abs(offset);
     return { x: xPosition, scale, zIndex };
@@ -79,12 +80,12 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
             <div
               className="absolute inset-0 w-1/2 h-full"
               onClick={handleNext}
-              style={{ cursor: "pointer", zIndex: 1000 }}
+              style={{ cursor: "pointer", zIndex: 999 }}
             />
             <div
               className="absolute inset-0 w-1/2 h-full left-1/2 "
               onClick={handleBack}
-              style={{ cursor: "pointer", zIndex: 1000 }}
+              style={{ cursor: "pointer", zIndex: 999 }}
             />
 
             {projects.map((project, index) => {
@@ -100,7 +101,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                 >
                   <Card
                     isBlurred
-                    className=" bg-[var(--dialogColor)] max-w-[610px] w-full border rounded-xl"
+                    className=" bg-[var(--dialogColor)] max-w-[610px] w-full border border border-[var(--primaryColor)] rounded-xl"
                     shadow="lg"
                   >
                     <CardBody>
@@ -111,10 +112,10 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                       />
 
                       <div className="space-y-4 flex flex-col items-center justify-center p-4">
-                        <h3 className="text-2xl font-bold leading-tight text-gray-900 dark:text-white mt-3">
+                        <h3 className="text-2xl font-bold leading-tight text-gray-900 dark:text-white mt-3 text-center">
                           {project.title}
                         </h3>
-                        <span className="bg-purple-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-xl dark:bg-gray-700 dark:text-gray-300 ">
+                        <span className="bg-purple-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-xl dark:bg-[var(--primaryColor)] dark:text-white">
                           {project.company}
                         </span>
                         <p className="text-lg font-normal text-gray-500 dark:text-gray-400 text-center">

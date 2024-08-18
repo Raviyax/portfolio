@@ -34,7 +34,7 @@ const QualificationItem = ({
           </p>
         </Column>
 
-        <div className="flex flex-row relative gap-1 items-center justify-center px-2 py-0.5 border border-[var(--textColor)] text-[var(--textColor)] rounded-[var(--borderRadius)]">
+        <div className="flex flex-row relative gap-1 items-center justify-center px-2 py-0.5  text-[var(--textColor)] rounded-[var(--borderRadius)] bg-[var(--primaryColor)]">
           <p className="text-xs/6 font-medium uppercase">{startDate}</p>
 
           <span>-</span>

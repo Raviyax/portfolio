@@ -9,7 +9,7 @@ const Contact = () => {
     "Hi Ravishan, I'm reaching out to you from your website. I have a question about your services.";
   return (
     <>
-      <section className="bg-[var(--dialogColor)] w-full">
+      <section className="bg-[var(--dialogColor)] w-full" id="contact">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg">
           <div className="flex flex-col lg:flex-row items-stretch lg:items-start gap-10 lg:gap-20">
             <div className="w-full lg:w-1/2">

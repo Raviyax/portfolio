@@ -9,6 +9,7 @@ import ResumeButton from "./ui/ResumeButton";
 import TalkButton from "./ui/TalkButton";
 import { FlipWords } from "../common/FlipWords";
 import {
+  faFacebook,
   faGithub,
   faLinkedin,
   faTelegram,
@@ -24,16 +25,22 @@ const Hero = ({ id }: Readonly<{ id: string }>) => {
         <Column classNames="w-full items-center justify-center">
           <div className="inline-flex items-center">
             <p className="text-2xl/normal sm:text-3xl/normal md:text-5xl/normal lg:text-6xl/normal xl:text-7xl/normal dark:text-[var(--textColor)] text-[var(--textColor)] font-bold text-center">
-              Hi there, I am
+              Hi there, I am Ravishan
             </p>
-            <FlipWords
-              words={["Ravishan", "@raviyax"]}
-              className="text-2xl/normal sm:text-3xl/normal md:text-5xl/normal lg:text-6xl/normal xl:text-7xl/normal dark:text-[var(--primaryColor)] text-[var(--primaryColor)] font-bold text-center"
-            />
           </div>
-          <p className="text-sm/normal md:text-base/normal dark:text-[var(--textColorLight)] text-[var(--textColorLight)]">
-            Software Engineer & Full Stack Developer
-          </p>
+          <FlipWords
+            words={[
+              "Software Engineer",
+              "Web Developer",
+              "Information Systems Undergraduate",
+            ]}
+            className="text-lg/normal sm:text-xl/normal md:text-2xl/normal lg:text-3xl/normal xl:text-4xl/normal dark:text-[var(--primaryColor)] text-[var(--primaryColor)] font-medium text-center"
+          />
+          <img
+            className="rounded-full w-96 h-96"
+            src="/images/me.png"
+            alt="Ravishan"
+          />
 
           <div className="gap-4 mt-12 lg:mt-16 flex flex-col md:flex-row">
             <TalkButton />
@@ -74,7 +81,7 @@ const Hero = ({ id }: Readonly<{ id: string }>) => {
               aria-label="Facebook"
             >
               <span className="text-base/6 text-[var(--whiteColor)]">
-                <FontAwesomeIcon icon={faTelegram} />
+                <FontAwesomeIcon icon={faFacebook} />
               </span>
             </Link>
           </Row>

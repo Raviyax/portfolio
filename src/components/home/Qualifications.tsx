@@ -22,7 +22,7 @@ function Qualifications({ id }: { id: string }) {
               Qualification="BSc (Hons) in Information Systems"
               startDate="2022"
               endDate="Present"
-              description="I have a proven track record of success, having developed more than 5 web applications  that seamlessly integrate backend APIs."
+              description="Currently reading for my Bachelors’ Honours Degree in Information Systems at University of Colombo School of Computing (UCSC)"
             />
 
             <QualificationItem
@@ -31,7 +31,7 @@ function Qualifications({ id }: { id: string }) {
               Qualification="GCE Advanced Level"
               startDate="2018"
               endDate="2020"
-              description="I had the invaluable opportunity to make a significant impact by revamping and enhancing more than three mobile apps using Flutter."
+              description="Passed General Certificate of Advanced Level with 2 B pass and 1C passes in Mathematical Stream."
             />
 
             <QualificationItem
@@ -40,7 +40,7 @@ function Qualifications({ id }: { id: string }) {
               Qualification="GCE Ordinary Level"
               startDate="2013"
               endDate="2017"
-              description="I had the privilege of spearheading the development of the company's website and made needful changes into look and feel."
+              description="Passed General Certificate of Ordinary Level with 8A 1B"
             />
           </GridBox>
         </Fade>

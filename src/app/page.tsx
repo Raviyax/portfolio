@@ -14,9 +14,9 @@ const Home = () => {
   return (
     <PageBox>
       <FloatingNavbar className="app_nav" />
-      <Hero id="hero" />
+      <Hero id="home" />
       <Qualifications id="qualifications" />
-      <Technologies id="technologies" />
+      <Technologies id="skills" />
       <Projects projects={projectData} />
       <Contact />
 

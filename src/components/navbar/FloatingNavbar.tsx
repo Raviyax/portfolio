@@ -25,7 +25,7 @@ const FloatingNavbar = ({ className }: { className?: string }) => {
         )}
       >
         <Link
-          href="/#hero"
+          href="/#home"
           className={cn(
             "relative items-center flex space-x-1 text-neutral-50 hover:text-neutral-300"
           )}
@@ -45,7 +45,7 @@ const FloatingNavbar = ({ className }: { className?: string }) => {
         </Link>
 
         <Link
-          href="/#technologies"
+          href="/#skills"
           className={cn(
             "relative items-center flex space-x-1 text-neutral-50 hover:text-neutral-300"
           )}

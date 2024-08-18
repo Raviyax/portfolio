@@ -4,7 +4,7 @@ const TalkButton = () => {
   return (
     <Link
       className="app__filled_btn min-w-[12rem]"
-      href="https://t.me/raviyax"
+      href="#contact"
       target="_blank"
     >
       Let&apos;s Talk
