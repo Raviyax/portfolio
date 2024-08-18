@@ -41,6 +41,6 @@ export const projectData = [
       title: "Website for Hotel Services Company",
       description:
         "A website for Okura Hotel Services, a company offering a range of hotel management services.",
-    }
+    },
   ];
   

@@ -14,7 +14,6 @@ interface Project {
   company: string;
   title: string;
   description: string;
-  caseStudyLink: string;
 }
 
 interface ProjectsProps {
