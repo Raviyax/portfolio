@@ -1,14 +1,13 @@
-import Link from "next/link";
-
 const ResumeButton = () => {
   return (
-    <Link
+    <a
       className="app__outlined_btn min-w-[12rem]"
-      href="/Ravishan_Jayathilake_Resume.pdf"
+      href="/Ravishan_Jayathilake.pdf"
       target="_blank"
+      download="Ravishan_Jayathilake.pdf"
     >
       Download Resume
-    </Link>
+    </a>
   );
 };
 
